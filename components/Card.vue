@@ -1,6 +1,6 @@
 <template>
     <div
-        class="transition-shadow flex justify-center items-center border mx-96 text-center shadow-md shadow-inner hover:shadow-lg">
+        class="transition-shadow flex justify-center items-center border mx-96 text-center shadow-md shadow-inner hover:shadow-lg bg-white">
         <slot></slot>
     </div>
 </template>

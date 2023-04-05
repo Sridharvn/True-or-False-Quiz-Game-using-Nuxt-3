@@ -7,11 +7,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  nitro: {
-    output: {
-      dir: "output",
-      serverDir: "output/server",
-      publicDir: "output/public",
-    },
-  },
+  
 });

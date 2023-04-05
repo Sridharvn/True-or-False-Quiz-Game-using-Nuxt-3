@@ -7,5 +7,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  
+  buildDir: "nuxt-build",
 });

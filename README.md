@@ -3,7 +3,7 @@
 This is a True or False Quiz Game built using Nuxt. The game consists of a series of questions with two possible answers: True or False. The user will be able to select an answer for each question and receive immediate feedback on whether the answer was correct or not. At the end of the game, the user will be shown their score and given the option to restart the game.
 
 [Click me view the app on Vercel](https://true-or-false-quiz-game-using-nuxt-3.vercel.app/)
-[Click me view the app on Netlify](https://642d5b142ababf1878d38879--astonishing-starlight-3dae3a.netlify.app/)
+[Click me view the app on Netlify](https://642d6f08e929442cafe29ebd--astonishing-starlight-3dae3a.netlify.app/)
 <!-- [Click me view the app on Cloudflare](https://true-or-false-quiz-game-using-nuxt-3.vercel.app/) -->
 
 ## Project setup

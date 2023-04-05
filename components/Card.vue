@@ -1,7 +1,7 @@
 <template>
     <div class="flex-col ">
         <div
-            class="rounded only:transition-shadow flex justify-center items-start p-5 text-3xl text-blue-900 border mx-96 text-center shadow-md shadow-inner hover:shadow-lg bg-white h-96 min-h-full">
+            class="rounded only:transition-shadow flex justify-center items-start p-5 text-3xl text-blue-900 border lg:mx-96 sm:mx-36 md:mx-64 mx-12 text-center shadow-md shadow-inner hover:shadow-lg bg-white h-96 min-h-full">
             <slot></slot>
         </div>
         <div class="flex justify-center mt-5">

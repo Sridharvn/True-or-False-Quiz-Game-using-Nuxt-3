@@ -4,7 +4,7 @@ This is a True or False Quiz Game built using Nuxt. The game consists of a serie
 
 [Click me view the app on Vercel](https://true-or-false-quiz-game-using-nuxt-3.vercel.app/)
 [Click me view the app on Netlify](https://642d6f08e929442cafe29ebd--astonishing-starlight-3dae3a.netlify.app/)
-<!-- [Click me view the app on Cloudflare](https://true-or-false-quiz-game-using-nuxt-3.vercel.app/) -->
+[Click me view the app on Cloudflare](https://true-or-false-quiz-game-using-nuxt-3.pages.dev/)
 
 ## Project setup
 

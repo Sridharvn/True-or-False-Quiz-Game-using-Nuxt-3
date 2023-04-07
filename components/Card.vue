@@ -5,7 +5,7 @@
             <slot></slot>
         </div>
         <div class="flex justify-center mt-5">
-            {{ correctAnswer }}
+            <!-- {{ correctAnswer }} -->
             <TrueFalseButton class="p-4" type="true" v-on:click="trueClicked()">True</TrueFalseButton>
             <TrueFalseButton class="p-4" type="false" v-on:click="falseClicked()">False</TrueFalseButton>
         </div>
@@ -21,7 +21,7 @@ export default {
             if (this.correctAnswer == "True") {
                 this.$emit("correct")
             }
-            else {
+            else if (this.correctAnswer == "False") {
                 this.$emit("incorrect")
             }
         },
@@ -29,7 +29,7 @@ export default {
             if (this.correctAnswer == "False") {
                 this.$emit("correct")
             }
-            else {
+            else if (this.correctAnswer == "True") {
                 this.$emit("incorrect")
             }
         }

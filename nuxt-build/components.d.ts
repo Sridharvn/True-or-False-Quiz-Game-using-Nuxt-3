@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Card': typeof import("../components/Card.vue")['default']
+    'EndScreen': typeof import("../components/EndScreen.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Game': typeof import("../components/Game.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
@@ -25,6 +26,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCard': typeof import("../components/Card.vue")['default']
+    'LazyEndScreen': typeof import("../components/EndScreen.vue")['default']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
     'LazyGame': typeof import("../components/Game.vue")['default']
     'LazyHeader': typeof import("../components/Header.vue")['default']
@@ -51,6 +53,7 @@ declare module 'vue' {
 }
 
 export const Card: typeof import("../components/Card.vue")['default']
+export const EndScreen: typeof import("../components/EndScreen.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Game: typeof import("../components/Game.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
@@ -74,6 +77,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCard: typeof import("../components/Card.vue")['default']
+export const LazyEndScreen: typeof import("../components/EndScreen.vue")['default']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
 export const LazyGame: typeof import("../components/Game.vue")['default']
 export const LazyHeader: typeof import("../components/Header.vue")['default']

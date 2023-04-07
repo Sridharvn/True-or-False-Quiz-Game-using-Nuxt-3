@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- {{ questions.length }} -->
-        <div v-if="current <= questions.length">
+        <div v-if="current < questions.length">
             <div v-if="questions.length == 0">
                 <Card>Loading... </Card>
             </div>

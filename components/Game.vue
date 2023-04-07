@@ -14,7 +14,8 @@
                         </h1>
                         <br />
                         <p>
-                            {{ questions[current].question }}
+                            {{ currentQuestion }}
+                            <!-- {{ questions[current].question }} -->
                             <br />
                             True or False?
                         </p>
@@ -30,15 +31,32 @@
 <script>
 export default {
     methods: {
+        removeQuot() {
+            // debugger;
+            this.currentQuestion = this.decode(this.questions[this.current].question)
+            // this.currentQuestion = this.questions[this.current].question.replace(/&quot;/g, '"');
+            // this.currentQuestion = this.currentQuestion.replace(/&eacute;/g, 'e');
+            console.log(this.currentQuestion);
+        },
+
         isCorrect() {
             // console.log("Correct");
             this.$emit("correct")
             this.current += 1;
+            this.removeQuot();
         },
         isInCorrect() {
             // console.log("InCorrect");
             this.$emit("incorrect")
             this.current += 1;
+            this.removeQuot();
+        },
+        decode(str) {
+
+            let txt = new DOMParser().parseFromString(str, "text/html");
+
+            return txt.documentElement.textContent;
+
         }
     },
     props: {
@@ -48,8 +66,11 @@ export default {
     data() {
         return {
             current: 0,
+            currentQuestion: ""
         }
     },
-
+    mounted() {
+        this.removeQuot()
+    }
 }
 </script>

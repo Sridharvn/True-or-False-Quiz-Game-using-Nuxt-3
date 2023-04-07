@@ -89,7 +89,7 @@ export default {
                     console.log(response);
                     this.isStarted = true;
                 });
-            // console.log(this.questions);
+            console.log(this.questions);
 
         },
         isCorrect() {

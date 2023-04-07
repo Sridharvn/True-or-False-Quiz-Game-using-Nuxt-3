@@ -5,8 +5,35 @@
             <slot></slot>
         </div>
         <div class="flex justify-center mt-5">
-            <TrueFalseButton class="p-4" type="true">True</TrueFalseButton>
-            <TrueFalseButton class="p-4" type="false">False</TrueFalseButton>
+            {{ correctAnswer }}
+            <TrueFalseButton class="p-4" type="true" v-on:click="trueClicked()">True</TrueFalseButton>
+            <TrueFalseButton class="p-4" type="false" v-on:click="falseClicked()">False</TrueFalseButton>
         </div>
     </div>
 </template>
+<script>
+export default {
+    props: {
+        correctAnswer: String
+    },
+    methods: {
+        trueClicked() {
+            if (this.correctAnswer == "True") {
+                this.$emit("correct")
+            }
+            else {
+                this.$emit("incorrect")
+            }
+        },
+        falseClicked() {
+            if (this.correctAnswer == "False") {
+                this.$emit("correct")
+            }
+            else {
+                this.$emit("incorrect")
+            }
+        }
+    },
+
+}
+</script>

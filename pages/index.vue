@@ -3,20 +3,7 @@
         Welcome To the Game
     </div>
     <div v-if="isStarted">
-        <Card>
-            <div v-if="questions.length == 0">Loading...</div>
-            <div v-else>
-                <h1>
-                    {{ questions[0].category }}
-                </h1>
-                <br />
-                <p>
-                    {{ questions[0].question }}
-                    <br />
-                    True or False?
-                </p>
-            </div>
-        </Card>
+        <Game :questions="questions"></Game>
     </div>
     <div v-else>
         <div class="lg:text-xl text-center lg:mx-64 md:mx-32 sm:mx-10 mx-4">This is a true or false game. You wil be given a
@@ -106,7 +93,7 @@ export default {
         return {
             API_URL: "https://opentdb.com/api.php",
             questions: [],
-            isStarted: false,
+            isStarted: true,
             amount: 10,
             difficulty: "Easy"
         };

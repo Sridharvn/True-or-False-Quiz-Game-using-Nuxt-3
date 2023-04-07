@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'Card': typeof import("../components/Card.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
+    'Game': typeof import("../components/Game.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
     'TrueFalseButton': typeof import("../components/TrueFalseButton.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -25,6 +26,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCard': typeof import("../components/Card.vue")['default']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
+    'LazyGame': typeof import("../components/Game.vue")['default']
     'LazyHeader': typeof import("../components/Header.vue")['default']
     'LazyTrueFalseButton': typeof import("../components/TrueFalseButton.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -50,6 +52,7 @@ declare module 'vue' {
 
 export const Card: typeof import("../components/Card.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
+export const Game: typeof import("../components/Game.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
 export const TrueFalseButton: typeof import("../components/TrueFalseButton.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -72,6 +75,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCard: typeof import("../components/Card.vue")['default']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
+export const LazyGame: typeof import("../components/Game.vue")['default']
 export const LazyHeader: typeof import("../components/Header.vue")['default']
 export const LazyTrueFalseButton: typeof import("../components/TrueFalseButton.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']

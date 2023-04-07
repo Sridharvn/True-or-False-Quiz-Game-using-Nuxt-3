@@ -32,24 +32,20 @@
 export default {
     methods: {
         removeQuot() {
-            // debugger;
-            this.currentQuestion = this.decode(this.questions[this.current].question)
-            // this.currentQuestion = this.questions[this.current].question.replace(/&quot;/g, '"');
-            // this.currentQuestion = this.currentQuestion.replace(/&eacute;/g, 'e');
-            console.log(this.currentQuestion);
+            this.currentQuestion = this.decode(this.questions[this.current].question);
         },
 
         isCorrect() {
-            // console.log("Correct");
             this.$emit("correct")
             this.current += 1;
-            this.removeQuot();
+            if (this.questions[this.current].question) { this.removeQuot(); }
+
+
         },
         isInCorrect() {
-            // console.log("InCorrect");
             this.$emit("incorrect")
             this.current += 1;
-            this.removeQuot();
+            if (this.questions[this.current].question) { this.removeQuot(); }
         },
         decode(str) {
 

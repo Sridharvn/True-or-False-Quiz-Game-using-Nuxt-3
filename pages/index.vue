@@ -94,10 +94,10 @@ export default {
         },
         isCorrect() {
             this.score += 1;
-            console.log("Parent Correct");
+            // console.log("Parent Correct");
         },
         isInCorrect() {
-            console.log("Parent InCorrect");
+            // console.log("Parent InCorrect");
         },
     },
     data() {

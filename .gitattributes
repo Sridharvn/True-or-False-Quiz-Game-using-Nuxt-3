@@ -1,2 +1,2 @@
-.output linguist-generated=true
-nuxt-build linguist-generated=true
+.output/* linguist-generated=true
+nuxt-build/* linguist-generated=true

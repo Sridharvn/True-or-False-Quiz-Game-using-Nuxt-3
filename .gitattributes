@@ -1,2 +1,4 @@
-.output linguist-generated=true
-nuxt-build linguist-generated=true
+.output -diff
+nuxt-build -diff
+# .output linguist-generated=true
+# nuxt-build linguist-generated=true

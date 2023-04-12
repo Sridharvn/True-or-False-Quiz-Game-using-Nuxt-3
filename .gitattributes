@@ -1,4 +1,4 @@
 # .output/* -diff
 # nuxt-build/* -diff
-.output -diff linguist-generated=true
-nuxt-build -diff linguist-generated=true
+.output/** -diff linguist-generated=true
+nuxt-build/** -diff linguist-generated=true

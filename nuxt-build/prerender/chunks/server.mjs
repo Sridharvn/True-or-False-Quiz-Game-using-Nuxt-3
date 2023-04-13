@@ -428,7 +428,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./index-606643d3.mjs').then((m) => m.default || m)
+    component: () => import('./index-1a903047.mjs').then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -653,7 +653,7 @@ const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
 const layouts = {
-  default: () => import('./default-c4af853d.mjs').then((m) => m.default || m)
+  default: () => import('./default-18a81976.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",

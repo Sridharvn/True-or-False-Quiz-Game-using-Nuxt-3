@@ -24,7 +24,7 @@
             </div>
         </div>
         <div v-else>
-            <EndScreen :score="score"></EndScreen>
+            <EndScreen :score="score" :questions="questions" :yourAnswers="yourAnswers"></EndScreen>
         </div>
     </div>
 </template>
@@ -37,6 +37,7 @@ export default {
 
         isCorrect() {
             this.$emit("correct")
+            this.yourAnswers.push(this.questions[this.current].correct_answer.toString());
             this.current += 1;
             if (this.questions[this.current].question) { this.removeQuot(); }
 
@@ -44,6 +45,7 @@ export default {
         },
         isInCorrect() {
             this.$emit("incorrect")
+            this.yourAnswers.push(this.questions[this.current].correct_answer.toString());
             this.current += 1;
             if (this.questions[this.current].question) { this.removeQuot(); }
         },
@@ -62,7 +64,8 @@ export default {
     data() {
         return {
             current: 0,
-            currentQuestion: ""
+            currentQuestion: "",
+            yourAnswers: [],
         }
     },
     mounted() {

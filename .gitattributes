@@ -1,4 +1,6 @@
 # .output/* -diff
 # nuxt-build/* -diff
-.output/** -diff linguist-generated
-nuxt-build/** -diff linguist-generated
+# .output/** -diff linguist-generated
+# nuxt-build/** -diff linguist-generated
+.output/** -diff linguist-vendored
+nuxt-build/** -diff linguist-vendored
